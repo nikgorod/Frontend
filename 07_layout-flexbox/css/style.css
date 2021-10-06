@@ -1,0 +1,328 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 1200px;
+  font-family: 'font', sans-serif;
+}
+
+/* glob */
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1200px;
+}
+
+.section-title {
+  margin: 0;
+  margin-left: 40px;
+}
+
+.section-descr {
+  margin: 0;
+}
+
+.section-offset {
+  padding-bottom: 70px;
+}
+
+
+/* header */
+
+.header {
+  padding-top: 30px;
+  margin-bottom: 70px;
+}
+
+.header-container {
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header-logo {
+  width: 261px;
+  margin-right: 40px;
+}
+
+.header-contact-link {
+  margin-right: 550px;
+}
+
+.header-nav {
+  width: 1170px;
+  height: 70px;
+  align-items: center;
+  outline: 1px solid greenyellow;
+}
+
+.header-list {
+  margin-right: 114px;
+  padding-left: 45px;
+}
+
+.header-list-item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.header-btn:not(:last-child) {
+  margin-right: 45px;
+}
+
+/* special-offer */
+
+
+
+.special-offer-title {
+  margin-bottom: 20px;
+}
+
+.special-offer-list {
+  height: 563px;   /* Не получается */
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.special-offer-item:not(:nth-child(3)) {
+  width: 573px;
+  min-height: 258px;
+}
+
+.special-offer-item:not(:nth-child(3n)) {
+  margin-right: 23px;
+}
+
+.special-offer-item:nth-child(3) {
+  width: 573px;
+  min-height: 540px;
+}
+
+.special-offer-item {
+  outline: 1px solid greenyellow;
+  margin-bottom: 23px;
+}
+
+.special-offer-item-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding-left: 40px;
+  padding-top: 40px;
+  width: 299px;
+  min-height: 80px;
+}
+
+.special-offer-item-title2 {
+  margin: 0;
+  padding-left: 40px;
+  padding-top: 211px;
+  margin-bottom: 15px;
+  width: 299px;
+  min-height: 180px;
+}
+
+.special-offer-item-descr {
+  margin: 0;
+  padding-left: 40px;
+  margin-bottom: 47px;
+  min-width: 114px;
+  height: 20px;
+}
+
+.special-offer-item-descr2 {
+  margin: 0;
+  padding-left: 40px;
+  margin-bottom: 47px;
+  min-width: 146px;
+  height: 30px;
+
+}
+
+.special-offer-item-link {
+  height: 16px;
+  min-width: 87px;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.special-offer {
+  padding-bottom: 47px;
+}
+
+/* about-us */
+
+.about-us-container {
+  min-height: 180px;
+  width: 888px;
+}
+
+.about-us-title {
+  margin-bottom: 11px;
+}
+
+/* services */
+
+.services {
+  padding-bottom: 47px;
+}
+
+.services-title {
+  margin-bottom: 20px;
+}
+
+.services-list {
+  flex-wrap: wrap;
+}
+
+.services-list-item {
+  width: 573px;
+  min-height: 330px;
+  margin-bottom: 23px;
+  outline: 1px solid greenyellow;
+}
+
+.services-list-item:not(:nth-child(2n)) {
+  margin-right: 23px;
+}
+
+.services-img {
+  object-fit: cover;
+  margin-bottom: 26px;
+}
+
+.services-link {
+  min-width: 285px;
+  height: 40px;
+  margin-left: 45px;
+}
+
+.services-descr {
+  width: 401px;
+  min-height: 51px;
+  margin-bottom: 50px;
+  margin-left: 45px;
+}
+
+
+/*  advantages */
+
+.advantages {
+  padding-bottom: 47px;
+}
+
+.advantages-title {
+  margin-bottom: 30px;
+}
+
+.advantages-list {
+  flex-wrap: wrap;
+}
+
+.advantages-item {
+  width: 275px;
+  min-height: 275px;
+  margin-bottom: 23px;
+  outline: 1px solid greenyellow;
+}
+
+.advantages-item:not(:nth-child(4n)) {
+  margin-right: 23px;
+}
+
+.avantages-text {
+  width: 188px;
+  min-height: 118px;
+  padding-left: 45px;
+  padding-top: 116px;
+  margin-bottom: 41px;
+}
+
+/* placement */
+
+.placement-title {
+  margin-bottom: 30px;
+}
+
+.placement-list {
+  flex-wrap: wrap;
+}
+
+.placement-item {
+  width: 374px;
+  min-height: 440px;
+  margin-bottom: 23px;
+  outline: 1px solid greenyellow;
+}
+
+.placement-item:not(:nth-child(3n)) {
+  margin-right: 23px;
+}
+
+.placement-img {
+  margin-bottom: 36px;
+}
+
+
+.placement-container {
+  align-items: stretch;
+}
+
+.placement-text-price {
+  padding-left: 45px;
+  margin-right: 44px;
+  margin-bottom: 16px;
+}
+
+.placement-stars svg:not(:last-child) {
+  margin-right: 6px;
+}
+
+.placement-text-name,
+.placement-text-address {
+  min-width: 191px;
+  min-height: 16px;
+  padding-left: 45px;
+  margin-bottom: 16px;
+}
+
+.placement-btn {
+  padding-left: 45px;
+  margin-bottom: 41px;
+}
+
+.variants{
+  padding-top: 373px;
+  padding-left: 54px;
+}
