@@ -387,7 +387,6 @@ body {
 
 .advantages-list {
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .advantages-item {
@@ -398,6 +397,10 @@ body {
   border-radius: 15px;
   background-repeat: no-repeat;
   background-position: 45px 40px;
+}
+
+.advantages-item:not(:nth-child(4n)) {
+  margin-right: 23px;
 }
 
 .adv-1 {
@@ -448,7 +451,6 @@ body {
 
 .placement-list {
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
 .placement-item {
@@ -457,6 +459,10 @@ body {
   margin-bottom: 23px;
   background: #FFFFFF;
   border-radius: 15px;
+}
+
+.placement-item:not(:nth-child(3n)) {
+  margin-right: 23px;
 }
 
 .placement-img {
@@ -474,6 +480,7 @@ body {
   margin-right: 44px;
   margin-bottom: 16px;
 }
+
 
 .placement-stars {
   height: 32px;
