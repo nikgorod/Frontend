@@ -18,11 +18,10 @@ img {
 }
 
 body {
-  width: 1920px;
+  max-width: 1920px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   background: var(--color-white);
-  overflow-x:hidden;
 }
 
 @font-face {
@@ -178,7 +177,6 @@ body {
 /* hero */
 
 .hero__container {
-  position: relative;
   width: 100%;
   min-height: 620px;
   padding-left: 80px;
@@ -186,6 +184,7 @@ body {
   padding-bottom: 100px;
   background-image: url("../img/hero.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero__title {
@@ -207,11 +206,10 @@ body {
   font-size: 24px;
   line-height: 29px;
   color: #FFFFFF;
+  margin-bottom: 90px;
 }
 
 .hero__btn {
-  position: absolute;
-  bottom: 100px;
   padding: 25px 35px;
   font-weight: bold;
   font-size: 24px;
@@ -231,25 +229,33 @@ body {
   line-height: 32px;
 }
 
-.about-us__list {
+.about-us__container-content {
+  min-height: 622px;
+}
+
+.about-us__container-content_right {
   flex-direction: column;
-  flex-wrap: wrap;
-  height: 622px;
+  min-height: 622px;
 }
 
 .about-us__item_alert {
+  position: relative;
   width: 868px;
-  height: 622px;
+  min-height: 622px;
   margin-right: 30px;
-  padding-top: 426px;
   background-image: url("../img/builder.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
+
 .item-alert__container {
-  position: relative;
+  position: absolute;
+  align-items: center;
+  bottom: 0;
   width: 100%;
-  height: 196px;
+  min-height: 196px;
+  max-height: 100%;
   padding-left: 50px;
   padding-top: 50px;
   padding-bottom: 50px;
@@ -259,17 +265,17 @@ body {
 .about-us-item__descr_alert {
   width: 454px;
   min-height: 96px;
-  margin-right: 139px;
   font-weight: 700;
   font-size: 16px;
   line-height: 32px;
   color: var(--color-white);
 }
 
+.item-alert__btn {
+  align-content: center;
+}
+
 .about-us__btn {
-  position: absolute;
-  right: 50px;
-  top: 68px;
   padding: 18px 36px;
   border: 3px solid var(--color-orange);
   font-weight: 700;
@@ -283,6 +289,7 @@ body {
   width: 870px;
   min-height: 295px;
   padding-top: 65px;
+  padding-bottom: 65px;
   padding-left: 300px;
   background-color: var(--color-white);
   background-repeat: no-repeat;
@@ -290,6 +297,7 @@ body {
   background-position-y: 65px;
   border: 1px solid #CACACA;
 }
+
 
 .about-us__item_1 {
   margin-bottom: 32px;
@@ -311,7 +319,8 @@ body {
 
 .about-us-item__descr {
   width: 450px;
-  min-height: 128px;
+  margin-right: 139px;
+  min-height: 96px;
   line-height: 32px;
 }
 
@@ -402,7 +411,7 @@ body {
 }
 
 
-.question__button {
+.question__li {
   display: flex;
   width: 100%;
   min-height: 112px;
@@ -410,16 +419,23 @@ body {
   background-image: url('../img/question-btn.svg');
   background-repeat: no-repeat;
   background-position: right;
-  border-top: 1px solid #CACACA;
+  border-top: 1px solid transparent;
   border-bottom: 1px solid #CACACA;
+  margin-top: -1px;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   color: #333333;
   transition: color, .2s, ease-in-out;
+  cursor: pointer;
 }
 
-.question__button:last-child {
+.question__li:first-child {
+  border-top: 1px solid #CACACA;
+}
+
+
+.question__li:last-child {
   border-bottom: 1px solid #CACACA;
 }
 
@@ -503,7 +519,10 @@ body {
 .form__input-name,
 .form__input-email,
 .form__textarea {
+  outline: none;
+  border: none;
   padding-left: 24px;
+  outline: 0;
   background-color: #414141;
   transition: background-color, .2s, ease-in-out;
 }
@@ -583,7 +602,7 @@ textarea::placeholder {
 
 .btn:active {
   background-color: #E1670E;
-  transform: scale(0.8);
+
 }
 
 .about-us__btn:hover,
@@ -593,7 +612,7 @@ textarea::placeholder {
 
 .about-us__btn:active {
   background-color: #E1670E;
-  transform: scale(0.8);
+
 }
 
 .step__btn:hover {
@@ -618,7 +637,7 @@ textarea::placeholder {
 .do-work__button_alert:active {
   background-color: #000000;
   color: var(--color-white);
-  transform: scale(0.8);
+
 }
 
 
@@ -628,25 +647,25 @@ textarea::placeholder {
   background-color: #666666;
 }
 
-.question__button:hover,
-.question__button:focus {
+.question__li:hover,
+.question__li:focus {
   color: var(--color-orange);
 }
 
-.question__button:hover,
-.question__button:focus {
+.question__li:hover,
+.question__li:focus {
   border-top: 1px solid var(--color-orange);
   border-bottom: 1px solid var(--color-orange);
   background-image: url('../img/question-btn-1.svg');
 }
 
-.question__button:active {
+.question__li:active {
   border-top: 1px solid #CACACA;
   border-bottom: 1px solid #CACACA;
   background-image: url('../img/question-btn-2.svg');
 }
 
-.question__button:active {
+.question__li:active {
   color: var(--color-black);
 }
 
