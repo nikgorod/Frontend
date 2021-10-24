@@ -105,37 +105,39 @@
         </svg>
 
       </a>
-      <nav class="nav flex">
-        <ul class="list-reset nav__list flex">
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              О&nbsp;нас
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Проекты
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Этапы
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Отзывы
-            </a>
-          </li>
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              Контакты
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <button class="header__link search-link">
-      </button>
+      <div class="header__navigation flex">
+        <nav class="nav flex">
+          <ul class="list-reset nav__list flex">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                О&nbsp;нас
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Проекты
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Этапы
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Отзывы
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <button class="header__link search-link">
+        </button>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -497,9 +499,12 @@
           <input type="email" name="email" class="form__input-email" placeholder="E-mail*">
           <textarea name="message" class="form__textarea" placeholder="Сообщение"></textarea>
           <div class="form__bottom flex">
+
             <button class="btn-reset form__btn btn">Отправить данные</button>
-            <input type="checkbox" class="form__checkbox" required>
-            <label class="form__label">Согласен на&nbsp;обработку данных</label>
+            <div class="form__bottom_alert">
+              <input type="checkbox" class="form__checkbox" required>
+              <label class="form__label">Согласен на&nbsp;обработку данных</label>
+            </div>
           </div>
         </form>
       </div>
