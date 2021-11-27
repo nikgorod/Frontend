@@ -277,6 +277,8 @@ body {
     color: var(--color-white);
     padding-left: 14px;
     padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 14px;
 }
 
 .simplebar-track.simplebar-vertical {
@@ -537,6 +539,10 @@ body {
     max-width: 72%;
 }
 
+.gallery__invisible {
+    display: none;
+}
+
 .gallery__descr_container-768 {
     display: none;
 }
@@ -569,6 +575,7 @@ body {
 
 .choices {
     height: 40px;
+    transition: background-color .3s ease-in-out;
 }
 
 
@@ -583,6 +590,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 1);
     border-radius: 6px;
     color: var(--color-white);
+    transition: background-color .3s ease-in-out;
 }
 
 .choices__list--dropdown {
@@ -593,7 +601,10 @@ body {
 }
 .choices__list--dropdown .choices__item--selectable.choices__item--selectable.is-highlighted {
     background-color: inherit;
+    transition: background-color .3s ease-in-out;
 }
+
+
 
 .choices__item--choice:not(:last-child) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.85);
@@ -687,16 +698,13 @@ body {
     content: url('../img/gallery/swiper-next.svg');
 }
 
-.gallery__right_alert-paint {
-    display: none;
-}
+
 
 
 @media (max-width:1450px) {
     .header__nav {
         padding-right: 100px;
         padding-left: 25px;
-    
     }
 }
 
@@ -1196,6 +1204,7 @@ body {
     color: var(--color-hover);
 }
 
+
 .header__menu_button:hover {
     color: var(--color-purple);
     background-image: url('../img/bird-hover.svg');
@@ -1206,13 +1215,20 @@ body {
     background-image: url('../img/bird-active.svg');
 }
 
-.nav__item_link:active,
-.header__entry:active {
+.nav__item_link:active {
     color: var(--color-active);
+}
+
+.header__entry:active {
+    color: var(--color-purple);
 }
 
 .header__entry:hover {
     background-image: url('../img/entry-hover.svg');
+}
+
+.header__entry:active {
+    background-image: url('../img/entry-active.svg');
 }
 
 .search__input:hover,
@@ -1227,7 +1243,6 @@ body {
 .dropdown-container__item:hover,
 .dropdown-container__item:active {
     border: 2px solid #9D5CD0;
-
 }
 
 .dropdown-container__item:active {
@@ -1255,3 +1270,9 @@ body {
 }
 
 
+.choices__inner:hover,
+.choices__list--dropdown .choices__item--selectable.choices__item--selectable.is-highlighted:hover,
+.choices:focus .choices__inner {
+    background-color: #FFFFFF33;
+    color: var(--color-white);
+}

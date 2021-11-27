@@ -1,6 +1,8 @@
-new SimpleBar(document.querySelectorAll(".dropdown-container__list").forEach(el, {
+new SimpleBar(document.querySelectorAll(".dropdown-container__list").forEach(el => {
   
-  scrollbarMaxSize: 25
+  new SimpleBar(el, {
+    scrollbarMaxSize: 25,
+  })
 }
 ))
   
