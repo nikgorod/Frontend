@@ -4,3 +4,12 @@ const choices = new Choices(element, {
   shouldSort: false,
   position: 'bottom',
 });
+
+
+const elem = document.querySelector('.categories__selection');
+
+const Editchoices = new Choices(elem, {
+  searchEnabled: false,
+  shouldSort: false,
+  position: 'bottom',
+});
