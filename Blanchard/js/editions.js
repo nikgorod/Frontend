@@ -5,7 +5,6 @@ const sliderEdit = document.querySelector('.editions__swiper');
 editionSwiper = new Swiper(sliderEdit, {
     clickable: true,
     slideClass: 'editions__swiper-slide',
-    loop: true,
     centerSlides: true,
     pagination: {
         el: '.swiper-pagination--right',
@@ -24,7 +23,7 @@ editionSwiper = new Swiper(sliderEdit, {
             spaceBetween: 34,
         },
 
-        1023: {
+        1020: {
             slidesPerView: 2,
             slidesPerGroup: 2,
             spaceBetween: 50,
