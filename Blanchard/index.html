@@ -19,28 +19,28 @@
             <button class="burger-button btn-reset"></button>
             <div class="burger-menu">
                 <button class="btn-reset burger-exit"></button>
-                <div class="header__nav_alert">
-                    <ul class="header__nav_alert-list list-reset flex">
-                        <li class="nav__item">
-                            <a href="#about-us" class="nav__item_link">О нас</a>
+                <div class="header__nav-alert">
+                    <ul class="header__alert-list list-reset flex">
+                        <li class="header__item">
+                            <a href="#about-us" class="header__item-link">О нас</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#gallery" class="nav__item_link">Галерея</a>
+                        <li class="header__item">
+                            <a href="#gallery" class="header__item-link">Галерея</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#catalog" class="nav__item_link">Каталог</a>
+                        <li class="header__item">
+                            <a href="#catalog" class="header__item-link">Каталог</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#events" class="nav__item_link">События</a>
+                        <li class="header__item">
+                            <a href="#events" class="header__item-link">События</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#editions" class="nav__item_link">Издания</a>
+                        <li class="header__item">
+                            <a href="#editions" class="header__item-link">Издания</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#projects" class="nav__item_link">Проекты</a>
+                        <li class="header__item">
+                            <a href="#projects" class="header__item-link">Проекты</a>
                         </li>
-                        <li class="nav__item_">
-                            <a href="#contacts" class="nav__item_link">Контакты</a>
+                        <li class="header__item">
+                            <a href="#contacts" class="header__item-link">Контакты</a>
                         </li>
                     </ul>
                 </div>
@@ -137,52 +137,59 @@
             </a>
             <button class="search-button btn-reset"></button>
             <div class="search-alert flex">
-                <form class="search__form flex">
-                    <button class="btn-reset search__submit" aria-label="Кнопка Найти"></button>
-                    <input type="search" class="search__input">
+                <form class="search-alert__form flex">
+                    <button class="btn-reset header__submit" aria-label="Кнопка Найти"></button>
+                    <input type="search" class="header__input">
                 </form>
             </div>
             <button class="btn-reset search-close"></button>
             <nav class="header__nav">
-                <ul class="header__nav_list list-reset flex">
-                    <li class="nav__item">
-                        <a href="#about-us" class="nav__item_link text-hover bg-focus">О нас</a>
+                <ul class="header__nav-list list-reset flex">
+                    <li class="header__item">
+                        <a href="#about-us" class="header__item-link text-hover bg-focus">О нас</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#gallery" class="nav__item_link text-hover bg-focus">Галерея</a>
+                    <li class="header__item">
+                        <a href="#gallery" class="header__item-link text-hover bg-focus">Галерея</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#catalog" class="nav__item_link text-hover bg-focus">Каталог</a>
+                    <li class="header__item">
+                        <a href="#catalog" class="header__item-link text-hover bg-focus">Каталог</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#events" class="nav__item_link text-hover bg-focus">События</a>
+                    <li class="header__item">
+                        <a href="#events" class="header__item-link text-hover bg-focus">События</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#editions" class="nav__item_link text-hover bg-focus">Издания</a>
+                    <li class="header__item">
+                        <a href="#editions" class="header__item-link text-hover bg-focus">Издания</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#projects" class="nav__item_link text-hover bg-focus">Проекты</a>
+                    <li class="header__item">
+                        <a href="#projects" class="header__item-link text-hover bg-focus">Проекты</a>
                     </li>
-                    <li class="nav__item">
-                        <a href="#contacts" class="nav__item_link text-hover bg-focus">Контакты</a>
+                    <li class="header__item">
+                        <a href="#contacts" class="header__item-link text-hover bg-focus">Контакты</a>
                     </li>
                 </ul>
             </nav>
             <a href="#" class="header__entry text-hover bg-focus">Войти</a>
         </div>
         <div class="header__menu">
-            <div class="header__menu_container container flex">
-                <ul class="header__menu_list list-reset flex">
-                    <li class="header__menu_item">
-                        <button class="btn-reset header__menu_button text-hover bg-focus">Реализм
-
+            <div class="header__menu-container container flex">
+                <ul class="header__menu-list list-reset flex">
+                    <li class="header__menu-item">
+                        <button class="btn-reset header__menu-button text-hover bg-focus">Реализм
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 1L6 6L1 1" stroke="white" />
+                            </svg>
                         </button>
-                        <div class="dropdown-container">
+                        <div class="dropdown-container dropdown-container-1">
                             <ul class="dropdown-container__list list-reset" data-simplebar>
-                                <li class="dropdown-container__item dropdown-container-1__item_1">Тинторетто</li>
-                                <li class="dropdown-container__item dropdown-container-1__item_2">Фридрих</li>
-                                <li class="dropdown-container__item dropdown-container-1__item_3">Леонардо</li>
-                                <li class="dropdown-container__item dropdown-container-1__item_4">Верроккьо</li>
+                                <li class="dropdown-container__item dropdown-container-1__item-1"><a
+                                        class="dropdown-container__item-link" href="#">Тинторетто</a> </li>
+                                <li class="dropdown-container__item dropdown-container-1__item-2"><a
+                                        class="dropdown-container__item-link" href="#">Фридрих</a> </li>
+                                <li class="dropdown-container__item dropdown-container-1__item-3"><a
+                                        class="dropdown-container__item-link" href="#">Леонардо</a> </li>
+                                <li class="dropdown-container__item dropdown-container-1__item-4"><a
+                                        class="dropdown-container__item-link" href="#">Верроккьо</a> </li>
                                 <li class="dropdown-container__item"></li>
                                 <li class="dropdown-container__item"></li>
                                 <li class="dropdown-container__item"></li>
@@ -190,14 +197,23 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="header__menu_item">
-                        <button class="btn-reset header__menu_button text-hover bg-focus">Импрессионизм</button>
-                        <div class="dropdown-container">
-                            <ul class="dropdown-container__list list-reset" data-simplebar>
-                                <li class="dropdown-container__item dropdown-container-2__item_1">Моне</li>
-                                <li class="dropdown-container__item dropdown-container-2__item_2">Сислей</li>
-                                <li class="dropdown-container__item dropdown-container-2__item_3">Мане</li>
-                                <li class="dropdown-container__item dropdown-container-2__item_4">Ренуар</li>
+                    <li class="header__menu-item">
+                        <button class="btn-reset header__menu-button text-hover bg-focus">Импрессионизм
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 1L6 6L1 1" stroke="white" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-container dropdown-container-2">
+                            <ul class="dropdown-container__list  list-reset" data-simplebar>
+                                <li class="dropdown-container__item dropdown-container-2__item-1"><a
+                                        class="dropdown-container__item-link" href="#">Моне</a></li>
+                                <li class="dropdown-container__item dropdown-container-2__item-2"><a
+                                        class="dropdown-container__item-link" href="#">Сислей</a></li>
+                                <li class="dropdown-container__item dropdown-container-2__item-3"><a
+                                        class="dropdown-container__item-link" href="#">Мане</a></li>
+                                <li class="dropdown-container__item dropdown-container-2__item-4"><a
+                                        class="dropdown-container__item-link" href="#">Ренуар</a></li>
                                 <li class="dropdown-container__item"></li>
                                 <li class="dropdown-container__item"></li>
                                 <li class="dropdown-container__item"></li>
@@ -205,14 +221,23 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="header__menu_item">
-                        <button class="btn-reset header__menu_button text-hover bg-focus">Постимпрессионизм</button>
-                        <div class="dropdown-container">
+                    <li class="header__menu-item">
+                        <button class="btn-reset header__menu-button text-hover bg-focus">Постимпрессионизм
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 1L6 6L1 1" stroke="white" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-container dropdown-container-3">
                             <ul class="dropdown-container__list list-reset" data-simplebar>
-                                <li class="dropdown-container__item dropdown-container-3__item_1">Ван Гог</li>
-                                <li class="dropdown-container__item dropdown-container-3__item_2">Сезанн</li>
-                                <li class="dropdown-container__item dropdown-container-3__item_3">Гоген</li>
-                                <li class="dropdown-container__item dropdown-container-3__item_4">Сёра</li>
+                                <li class="dropdown-container__item dropdown-container-3__item-1"><a
+                                        class="dropdown-container__item-link" href="#">Ван Гог</a></li>
+                                <li class="dropdown-container__item dropdown-container-3__item-2"><a
+                                        class="dropdown-container__item-link" href="#">Сезанн</a></li>
+                                <li class="dropdown-container__item dropdown-container-3__item-3"><a
+                                        class="dropdown-container__item-link" href="#">Гоген</a></li>
+                                <li class="dropdown-container__item dropdown-container-3__item-4"><a
+                                        class="dropdown-container__item-link" href="#">Сёра</a></li>
                                 <li class="dropdown-container__item"></li>
                                 <li class="dropdown-container__item"></li>
                                 <li class="dropdown-container__item"></li>
@@ -220,14 +245,23 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="header__menu_item">
-                        <button class="btn-reset header__menu_button text-hover bg-focus">Авангард</button>
-                        <div class="dropdown-container">
+                    <li class="header__menu-item">
+                        <button class="btn-reset header__menu-button text-hover bg-focus">Авангард
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 1L6 6L1 1" stroke="white" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-container dropdown-container-4">
                             <ul class="dropdown-container__list list-reset" data-simplebar>
-                                <li class="dropdown-container__item dropdown-container-4__item_1">Кандинский</li>
-                                <li class="dropdown-container__item dropdown-container-4__item_2">Маринетти</li>
-                                <li class="dropdown-container__item dropdown-container-4__item_3">Малевич</li>
-                                <li class="dropdown-container__item dropdown-container-4__item_4">Пикассо</li>
+                                <li class="dropdown-container__item dropdown-container-4__item-1"><a
+                                        class="dropdown-container__item-link" href="#">Кандинский</a></li>
+                                <li class="dropdown-container__item dropdown-container-4__item-2"><a
+                                        class="dropdown-container__item-link" href="#">Маринетти</a></li>
+                                <li class="dropdown-container__item dropdown-container-4__item-3"><a
+                                        class="dropdown-container__item-link" href="#">Малевич</a></li>
+                                <li class="dropdown-container__item dropdown-container-4__item-4"><a
+                                        class="dropdown-container__item-link" href="#">Пикассо</a></li>
                                 <li class="dropdown-container__item"></li>
                                 <li class="dropdown-container__item"></li>
                                 <li class="dropdown-container__item"></li>
@@ -235,14 +269,23 @@
                             </ul>
                         </div>
                     </li>
-                    <li class="header__menu_item">
-                        <button class="btn-reset header__menu_button text-hover bg-focus">Футуризм</button>
-                        <div class="dropdown-container">
+                    <li class="header__menu-item">
+                        <button class="btn-reset header__menu-button text-hover bg-focus">Футуризм
+                            <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 1L6 6L1 1" stroke="white" />
+                            </svg>
+                        </button>
+                        <div class="dropdown-container dropdown-container-5">
                             <ul class="dropdown-container__list list-reset" data-simplebar>
-                                <li class="dropdown-container__item dropdown-container-5__item_1">Карра</li>
-                                <li class="dropdown-container__item dropdown-container-5__item_2">Прателла</li>
-                                <li class="dropdown-container__item dropdown-container-5__item_3">Северини</li>
-                                <li class="dropdown-container__item dropdown-container-5__item_4">Балла</li>
+                                <li class="dropdown-container__item dropdown-container-5__item-1"><a
+                                        class="dropdown-container__item-link" href="#">Карра</a></li>
+                                <li class="dropdown-container__item dropdown-container-5__item-2"><a
+                                        class="dropdown-container__item-link" href="#">Прателла</a></li>
+                                <li class="dropdown-container__item dropdown-container-5__item-3"><a
+                                        class="dropdown-container__item-link" href="#">Северини</a></li>
+                                <li class="dropdown-container__item dropdown-container-5__item-4"><a
+                                        class="dropdown-container__item-link" href="#">Балла</a></li>
                                 <li class="dropdown-container__item"></li>
                                 <li class="dropdown-container__item"></li>
                                 <li class="dropdown-container__item"></li>
@@ -251,9 +294,9 @@
                         </div>
                     </li>
                 </ul>
-                <form class="search__form flex">
-                    <button class="btn-reset search__submit" aria-label="Кнопка Найти"></button>
-                    <input type="search" class="search__input" placeholder="Поиск по сайту">
+                <form class="header__form flex">
+                    <button class="btn-reset header__submit" aria-label="Кнопка Найти"></button>
+                    <input type="search" class="header__input" placeholder="Поиск по сайту">
                 </form>
             </div>
         </div>
@@ -295,7 +338,7 @@
     <section id="gallery" class="section-offset gallery">
         <div class="gallery__container container flex">
             <div class="gallery__left flex">
-                <div class="left__gallery-selection flex">
+                <div class="gallery__left-selection flex">
                     <h2 class="gallery__title section-title">Галерея</h2>
                     <label for="gallery__select" class="gallery__label">Фильтр:</label>
                     <select id="gallery__select" class="gallery__select">
@@ -310,17 +353,17 @@
 
 
                 </div>
-                <div class="gallery__descr_container">
+                <div class="gallery__descr-container">
                     <p class="section-descr gallery__descr">
-                        Вам предоставляется 10&nbsp;бесплатных скачиваний. Для увеличения количества скачиваний <a
-                            href="#" class="gallery__link text-hover">авторизуйтесь</a>, либо воспользуйтесь лицензией.
+                        Вам предоставляется 10 бесплатных скачиваний. Для увеличения количества скачиваний <a href="#"
+                            class="gallery__link text-hover">авторизуйтесь</a>, либо воспользуйтесь лицензией.
                     </p>
                 </div>
             </div>
             <div class="gallery__right">
                 <div class="swiper gallery__swiper gallery__swiper_active" data-target="gallery__swiper_1">
                     <div class="swiper-menu">
-                        <button class="swiper-button-prev">
+                        <button class="swiper-button-prev" aria-label="Предыдущий слайд">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -334,7 +377,7 @@
 
                         </button>
                         <div class="swiper-pagination swiper-pagination--right"></div>
-                        <button class="swiper-button-next">
+                        <button class="swiper-button-next" aria-label="Следующий слайд">
                             <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -355,7 +398,7 @@
 
                                 <source srcset="img/gallery/gallery-paint-768-1.jpg" media="(max-width:768px)">
                                 <source srcset="img/gallery/gallery-paint-1024-1.jpg" media="(max-width:1024px)">
-                                <img class="swiper-slide--img" src="img/gallery/gallery-paint-1.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-paint-1.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
@@ -366,7 +409,7 @@
                                 <source srcset="img/gallery/gallery-paint-768-2.jpg" media="(max-width:768px)">
 
                                 <source srcset="img/gallery/gallery-paint-1024-2.jpg" media="(max-width:1024px)">
-                                <img class="swiper-slide--img" src="img/gallery/gallery-paint-2.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-paint-2.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
@@ -377,7 +420,7 @@
                                 <source srcset="img/gallery/gallery-paint-768-3.jpg" media="(max-width:768px)">
 
                                 <source srcset="img/gallery/gallery-paint-1024-3.jpg" media="(max-width:1024px)">
-                                <img class="swiper-slide--img" src="img/gallery/gallery-paint-3.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-paint-3.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
@@ -388,7 +431,7 @@
                                 <source srcset="img/gallery/gallery-paint-768-4.jpg" media="(max-width:768px)">
 
                                 <source srcset="img/gallery/gallery-paint-1024-4.jpg" media="(max-width:1024px)">
-                                <img class="swiper-slide--img" src="img/gallery/gallery-paint-4.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-paint-4.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
@@ -399,7 +442,7 @@
                                 <source srcset="img/gallery/gallery-paint-768-5.jpg" media="(max-width:768px)">
 
                                 <source srcset="img/gallery/gallery-paint-1024-5.jpg" media="(max-width:1024px)">
-                                <img class="swiper-slide--img" src="img/gallery/gallery-paint-5.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-paint-5.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
@@ -410,7 +453,7 @@
                                 <source srcset="img/gallery/gallery-paint-768-6.jpg" media="(max-width:768px)">
 
                                 <source srcset="img/gallery/gallery-paint-1024-6.jpg" media="(max-width:1024px)">
-                                <img class="swiper-slide--img" src="img/gallery/gallery-paint-6.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-paint-6.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
@@ -421,7 +464,7 @@
                                 <source srcset="img/gallery/gallery-paint-768-7.jpg" media="(max-width:768px)">
 
                                 <source srcset="img/gallery/gallery-paint-1024-7.jpg" media="(max-width:1024px)">
-                                <img class="swiper-slide--img" src="img/gallery/gallery-paint-7.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-paint-7.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
@@ -432,7 +475,7 @@
                                 <source srcset="img/gallery/gallery-paint-768-8.jpg" media="(max-width:768px)">
 
                                 <source srcset="img/gallery/gallery-paint-1024-8.jpg" media="(max-width:1024px)">
-                                <img class="swiper-slide--img" src="img/gallery/gallery-paint-8.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-paint-8.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
@@ -443,7 +486,7 @@
                                 <source srcset="img/gallery/gallery-paint-768-9.jpg" media="(max-width:768px)">
 
                                 <source srcset="img/gallery/gallery-paint-1024-9.jpg" media="(max-width:1024px)">
-                                <img class="swiper-slide--img" src="img/gallery/gallery-paint-9.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-paint-9.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
@@ -454,7 +497,7 @@
                                 <source srcset="img/gallery/gallery-paint-768-10.jpg" media="(max-width:768px)">
 
                                 <source srcset="img/gallery/gallery-paint-1024-10.jpg" media="(max-width:1024px)">
-                                <img class="swiper-slide--img" src="img/gallery/gallery-paint-10.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-paint-10.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
@@ -465,7 +508,7 @@
                                 <source srcset="img/gallery/gallery-paint-768-11.jpg" media="(max-width:768px)">
 
                                 <source srcset="img/gallery/gallery-paint-1024-11.jpg" media="(max-wisetdth:1024px)">
-                                <img class="swiper-slide--img" src="img/gallery/gallery-paint-11.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-paint-11.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
@@ -476,7 +519,7 @@
                                 <source srcset="img/gallery/gallery-paint-768-12.jpg" media="(max-width:768px)">
 
                                 <source srcset="img/gallery/gallery-paint-1024-12.jpg" media="(max-width:1024px)">
-                                <img class="swiper-slide--img" src="img/gallery/gallery-paint-12.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-paint-12.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
@@ -491,44 +534,44 @@
                     <div class="swiper-wrapper gallery__swiper-wrapper">
                         <button class="swiper-slide gallery__swiper-slide btn-reset">
                             <picture>
-                                <img class="swiper-slide--img" src="img/gallery/gallery-painting-1.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-painting-1.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
                         <button class="swiper-slide gallery__swiper-slide btn-reset">
                             <picture>
-                                <img class="swiper-slide--img" src="img/gallery/gallery-painting-2.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-painting-2.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
                         <button class="swiper-slide gallery__swiper-slide btn-reset">
                             <picture>
-                                <img class="swiper-slide--img" src="img/gallery/gallery-painting-3.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-painting-3.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
                         <button class="swiper-slide gallery__swiper-slide btn-reset">
                             <picture>
-                                <img class="swiper-slide--img" src="img/gallery/gallery-painting-4.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-painting-4.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
                         <button class="swiper-slide gallery__swiper-slide btn-reset">
                             <picture>
-                                <img class="swiper-slide--img" src="img/gallery/gallery-painting-5.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-painting-5.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
                         <button class="swiper-slide gallery__swiper-slide btn-reset">
                             <picture>
-                                <img class="swiper-slide--img" src="img/gallery/gallery-painting-6.jpg"
+                                <img class="swiper-slide__img" src="img/gallery/gallery-painting-6.jpg"
                                     alt="Gallery image">
                             </picture>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="gallery__descr_container-768">
+            <div class="gallery__descr-container-768">
                 <p class="section-descr gallery__descr">
                     Вам предоставляется 10&nbsp;бесплатных скачиваний. Для увеличения количества скачиваний <a href="#"
                         class="gallery__link">авторизуйтесь</a>, либо воспользуйтесь лицензией.
@@ -540,26 +583,26 @@
         <div class="catalog__container container">
             <div class="catalog__entry flex">
                 <h2 class="section-title catalog__title">Каталог</h2>
-                <div class="country__tabs">
-                    <ul class="country__tabs_list flex list-reset">
-                        <li class="country__tabs_item">
-                            <button class="country__tabs_btn country__tabs_btn_1 btn-reset" data-path="country__tab_1"
+                <div class="catalog__tabs">
+                    <ul class="catalog__tabs-list flex list-reset">
+                        <li class="catalog__tabs-item">
+                            <button class="catalog__tabs-btn catalog__tabs-btn_1 btn-reset" data-path="country__tab_1"
                                 aria-label="Кнопка франция"></button>
                         </li>
-                        <li class="country__tabs_item">
-                            <button class="country__tabs_btn country__tabs_btn_2 btn-reset" data-path="country__tab_2"
+                        <li class="catalog__tabs-item">
+                            <button class="catalog__tabs-btn catalog__tabs-btn_2 btn-reset" data-path="country__tab_2"
                                 aria-label="Кнопка германия"></button>
                         </li>
-                        <li class="country__tabs_item">
-                            <button class="country__tabs_btn country__tabs_btn-active country__tabs_btn_3 btn-reset"
+                        <li class="catalog__tabs-item">
+                            <button class="catalog__tabs-btn catalog__tabs-btn-active catalog__tabs-btn_3 btn-reset"
                                 data-path="country__tab_3" aria-label="Кнопка италия"></button>
                         </li>
-                        <li class="country__tabs_item">
-                            <button class="country__tabs_btn country__tabs_btn_4 btn-reset" data-path="country__tab_4"
+                        <li class="catalog__tabs-item">
+                            <button class="catalog__tabs-btn catalog__tabs-btn_4 btn-reset" data-path="country__tab_4"
                                 aria-label="Кнопка россия"></button>
                         </li>
-                        <li class="country__tabs_item">
-                            <button class="country__tabs_btn country__tabs_btn_5 btn-reset" data-path="country__tab_5"
+                        <li class="catalog__tabs-item">
+                            <button class="catalog__tabs-btn catalog__tabs-btn_5 btn-reset" data-path="country__tab_5"
                                 aria-label="Кнопка бельгия"></button>
                         </li>
                     </ul>
@@ -574,114 +617,114 @@
             </p>
             <div class="catalog__country-container flex" data-target="country__tab_1">
                 <div class="catalog__left">
-                    <div class="catalog__left_item-active">
+                    <div class="catalog__left-item-active">
                         <picture>
-                            <img class="catalog__left_img" src="img/catalog/catalog-error.svg" alt="">
+                            <img class="catalog__left-img" src="img/catalog/catalog-error.svg" alt="">
                         </picture>
-                        <h3 class="catalog__left_title">Что мы о нём знаем?</h3>
-                        <p class="catalog__left_descr section-descr">
+                        <h3 class="catalog__left-title">Что мы о нём знаем?</h3>
+                        <p class="catalog__left-descr section-descr">
                             Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                         </p>
-                        <a href="#gallery" class="catalog__left_link">В галерею</a>
+                        <a href="#gallery" class="catalog__left-link">В галерею</a>
                     </div>
                 </div>
                 <div class="catalog__right">
-                    <ul class="list-reset catalog__right_list accordion">
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <p class="bg-focus catalog__left_title-focus">С 1400 по 1499 гг.</p>
+                    <ul class="list-reset catalog__right-list accordion">
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <p class="bg-focus catalog__left-title-focus">С 1400 по 1499 гг.</p>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1500 по 1599 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1500 по 1599 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1600 по 1699 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1600 по 1699 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1700 по 1799 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1700 по 1799 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1800 по 1899 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1800 по 1899 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1900 по 1999 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1900 по 1999 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 2000 г.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 2000 г.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
@@ -690,114 +733,114 @@
             </div>
             <div class="catalog__country-container flex" data-target="country__tab_2">
                 <div class="catalog__left">
-                    <div class="catalog__left_item-active">
+                    <div class="catalog__left-item-active">
                         <picture>
-                            <img class="catalog__left_img" src="img/catalog/catalog-error.svg" alt="">
+                            <img class="catalog__left-img" src="img/catalog/catalog-error.svg" alt="">
                         </picture>
-                        <h3 class="catalog__left_title">Что мы о нём знаем?</h3>
-                        <p class="catalog__left_descr section-descr">
+                        <h3 class="catalog__left-title">Что мы о нём знаем?</h3>
+                        <p class="catalog__left-descr section-descr">
                             Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                         </p>
-                        <a href="#gallery" class="catalog__left_link">В галерею</a>
+                        <a href="#gallery" class="catalog__left-link">В галерею</a>
                     </div>
                 </div>
                 <div class="catalog__right">
-                    <ul class="list-reset catalog__right_list accordion">
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1400 по 1499 гг.</div>
+                    <ul class="list-reset catalog__right-list accordion">
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1400 по 1499 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1500 по 1599 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1500 по 1599 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1600 по 1699 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1600 по 1699 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1700 по 1799 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1700 по 1799 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1800 по 1899 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1800 по 1899 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1900 по 1999 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1900 по 1999 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 2000 г.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 2000 г.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
@@ -806,16 +849,16 @@
             </div>
             <div class="catalog__country-container catalog__country-container_active flex" data-target="country__tab_3">
                 <div class="catalog__left">
-                    <div class="catalog__left_item catalog__left_item-active" data-target="right__container_tab-12">
+                    <div class="catalog__left-item catalog__left-item-active" data-target="right__container_tab-12">
                         <picture>
                             <source srcset="img/catalog/painter-320.jpg" media="(max-width:320px)">
                             <source srcset="img/catalog/catalog-painter-992.jpg" media="(max-width:992px)">
                             <source srcset="img/catalog/catalog-painter-1024.jpg" media="(max-width:1024px)">
-                            <img class="catalog__left_img" src="img/catalog/catalog-painter.jpg" alt="">
+                            <img class="catalog__left-img" src="img/catalog/catalog-painter.jpg" alt="">
                         </picture>
-                        <h3 class="catalog__left_title">Доменико Гирландайо</h3>
-                        <h4 class="catalog__left_title-alert">2 июня 1448 — 11 января 1494.</h4>
-                        <p class="catalog__left_descr section-descr">
+                        <h3 class="catalog__left-title">Доменико Гирландайо</h3>
+                        <span class="catalog__left-title-alert">2 июня 1448 — 11 января 1494.</span>
+                        <p class="catalog__left-descr section-descr">
                             Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной
                             династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной
                             мастерской, где юный Микеланджело в&nbsp;течение года овладевал профессиональными навыками.
@@ -824,205 +867,205 @@
                             Флоренции в&nbsp;костюмах того времени).
                         </p>
                     </div>
-                    <div class="catalog__left_item" data-target="right__container_tab-error">
+                    <div class="catalog__left-item" data-target="right__container_tab-error">
                         <picture>
-                            <img class="catalog__left_img" src="img/catalog/catalog-error.svg" alt="">
+                            <img class="catalog__left-img" src="img/catalog/catalog-error.svg" alt="">
                         </picture>
-                        <h3 class="catalog__left_title">Что мы о нём знаем?</h3>
-                        <p class="catalog__left_descr section-descr">
+                        <h3 class="catalog__left-title">Что мы о нём знаем?</h3>
+                        <p class="catalog__left-descr section-descr">
                             Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                         </p>
-                        <a href="#gallery" class="catalog__left_link text-hover">В галерею</a>
+                        <a href="#gallery" class="catalog__left-link text-hover">В галерею</a>
                     </div>
                 </div>
                 <div class="catalog__right">
-                    <ul class="list-reset catalog__right_list accordion">
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1400 по 1499 гг.</div>
+                    <ul class="list-reset catalog__right-list accordion">
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1400 по 1499 гг.</div>
                             </div>
-                            <div class="catalog__right_container catalog__right_container-alert">
-                                <ul class="list-reset right__container_list flex">
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                            <div class="catalog__right-container right-container catalog__right-container-alert">
+                                <ul class="list-reset right-container__list flex">
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Бенедетто ди Биндо</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Бергоньоне, Амброджо</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Биссоло, Франческо</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Больтраффио, Джованни</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Бонсиньори, Франческо</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Боттичини, Рафаэлло</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Брамантино</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Бреа, Людовико</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Бьяджо д’Антонио Туччи</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Веккьетта</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Андреа Верроккьо</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-12">Доменико Гирландайо</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Беноццо Гоццоли</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Граначчи, Франческо</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Грегорио ди Чекко</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Джованни да Удине</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Джованни ди Паоло</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Джорджоне</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Парентино, Бернардо</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Пезеллино</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Пьетро Перуджино</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Перуцци, Бальдассаре</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Пизанелло</button>
                                     </li>
-                                    <li class="right__container_item">
-                                        <button class="btn-reset right__container_btn  text-hover"
+                                    <li class="right-container__item">
+                                        <button class="btn-reset right-container__btn  text-hover"
                                             data-path="right__container_tab-error">Пинтуриккьо</button>
                                     </li>
                                 </ul>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1500 по 1599 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1500 по 1599 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1600 по 1699 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1600 по 1699 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1700 по 1799 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1700 по 1799 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1800 по 1899 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1800 по 1899 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1900 по 1999 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1900 по 1999 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 2000 г.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 2000 г.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
@@ -1031,114 +1074,114 @@
             </div>
             <div class="catalog__country-container flex" data-target="country__tab_4">
                 <div class="catalog__left">
-                    <div class="catalog__left_item-active">
+                    <div class="catalog__left-item-active">
                         <picture>
-                            <img class="catalog__left_img" src="img/catalog/catalog-error.svg" alt="">
+                            <img class="catalog__left-img" src="img/catalog/catalog-error.svg" alt="">
                         </picture>
-                        <h3 class="catalog__left_title">Что мы о нём знаем?</h3>
-                        <p class="catalog__left_descr section-descr">
+                        <h3 class="catalog__left-title">Что мы о нём знаем?</h3>
+                        <p class="catalog__left-descr section-descr">
                             Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                         </p>
-                        <a href="#gallery" class="catalog__left_link">В галерею</a>
+                        <a href="#gallery" class="catalog__left-link">В галерею</a>
                     </div>
                 </div>
                 <div class="catalog__right">
-                    <ul class="list-reset catalog__right_list accordion">
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1400 по 1499 гг.</div>
+                    <ul class="list-reset catalog__right-list accordion">
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1400 по 1499 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1500 по 1599 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1500 по 1599 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1600 по 1699 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1600 по 1699 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1700 по 1799 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1700 по 1799 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1800 по 1899 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1800 по 1899 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1900 по 1999 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1900 по 1999 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 2000 г.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 2000 г.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
@@ -1147,114 +1190,114 @@
             </div>
             <div class="catalog__country-container flex" data-target="country__tab_5">
                 <div class="catalog__left">
-                    <div class="catalog__left_item-active">
+                    <div class="catalog__left-item-active">
                         <picture>
-                            <img class="catalog__left_img" src="img/catalog/catalog-error.svg" alt="">
+                            <img class="catalog__left-img" src="img/catalog/catalog-error.svg" alt="">
                         </picture>
-                        <h3 class="catalog__left_title">Что мы о нём знаем?</h3>
-                        <p class="catalog__left_descr section-descr">
+                        <h3 class="catalog__left-title">Что мы о нём знаем?</h3>
+                        <p class="catalog__left-descr section-descr">
                             Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!
                         </p>
-                        <a href="#gallery" class="catalog__left_link">В галерею</a>
+                        <a href="#gallery" class="catalog__left-link">В галерею</a>
                     </div>
                 </div>
                 <div class="catalog__right">
-                    <ul class="list-reset catalog__right_list accordion">
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1400 по 1499 гг.</div>
+                    <ul class="list-reset catalog__right-list accordion">
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1400 по 1499 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1500 по 1599 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1500 по 1599 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1600 по 1699 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1600 по 1699 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1700 по 1799 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1700 по 1799 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1800 по 1899 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1800 по 1899 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 1900 по 1999 гг.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 1900 по 1999 гг.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
-                        <li class="catalog__right_item">
-                            <div class="catalog__right_title text-hover">
-                                <div class="bg-focus catalog__left_title-focus">С 2000 г.</div>
+                        <li class="catalog__right-item">
+                            <div class="catalog__right-title text-hover">
+                                <div class="bg-focus catalog__left-title-focus">С 2000 г.</div>
                             </div>
-                            <div class="catalog__right_container flex">
-                                <div class="right__error-container"></div>
-                                <div class="right__error_info">
-                                    <h3 class="right__error_title">Здесь пока пусто</h3>
-                                    <p class="section-descr right__error_descr">А в галерее вы всегда можете найти
+                            <div class="catalog__right-container flex">
+                                <div class="right-error-container"></div>
+                                <div class="right-error-info">
+                                    <h3 class="right-error-info__title">Здесь пока пусто</h3>
+                                    <p class="section-descr right-error-info__descr">А в галерее вы всегда можете найти
                                         что-то интересное для себя</p>
-                                    <a href="#gallery" class="right__error_link">В галерею</a>
+                                    <a href="#gallery" class="right-error-info__link">В галерею</a>
                                 </div>
                             </div>
                         </li>
@@ -1282,10 +1325,10 @@
                                 Музей им. Щусева <br>
                                 с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля
                             </p>
-                            <h3 class="events__title_alert">
+                            <h3 class="events__title-alert">
                                 Книжная гравюра в живом восприятии
                             </h3>
-                            <p class="events__descr_alert section-descr">
+                            <p class="events__descr-alert section-descr">
                                 Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной
                                 династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо.
                             </p>
@@ -1307,10 +1350,10 @@
                                 ММОМА <br>
                                 24&nbsp;марта 19:00
                             </p>
-                            <h3 class="events__title_alert">
+                            <h3 class="events__title-alert">
                                 &laquo;Открытая дискуссия&raquo;. Дмитрий Петров и Сергей Ильин.
                             </h3>
-                            <p class="events__descr_alert section-descr">
+                            <p class="events__descr-alert section-descr">
                                 Высокий уровень вовлечения представителей целевой аудитории является четким
                                 доказательством простого факта.
                             </p>
@@ -1331,10 +1374,10 @@
                             <p class="events__pre-info">
                                 Еврейский музей <br> с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля
                             </p>
-                            <h3 class="events__title_alert">
+                            <h3 class="events__title-alert">
                                 Выставка &laquo;Формация 2020&raquo;
                             </h3>
-                            <p class="events__descr_alert section-descr">
+                            <p class="events__descr-alert section-descr">
                                 Идейные соображения высшего порядка, а&nbsp;также современная методология разработки
                                 играет важную роль в&nbsp;формировании глубокомысленных рассуждений.
                             </p>
@@ -1354,10 +1397,10 @@
                             <p class="events__pre-info">
                                 Третьяковка на&nbsp;Крымском валу <br> с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля
                             </p>
-                            <h3 class="events__title_alert">
+                            <h3 class="events__title-alert">
                                 XXIV Международная биеннале молодого искусства
                             </h3>
-                            <p class="events__descr_alert section-descr">
+                            <p class="events__descr-alert section-descr">
                                 Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования.
                             </p>
                             <a href="#" class="events__link bg-focus text-hover">Подробнее</a>
@@ -1377,10 +1420,10 @@
                             <p class="events__pre-info">
                                 ММАМ <br> с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая
                             </p>
-                            <h3 class="events__title_alert">
+                            <h3 class="events__title-alert">
                                 Джон Винзор. Фотографии из серии &laquo;Метафора серебра&raquo;
                             </h3>
-                            <p class="events__descr_alert section-descr">
+                            <p class="events__descr-alert section-descr">
                                 Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной
                                 династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо.
                             </p>
@@ -1389,7 +1432,7 @@
                     </li>
                 </ul>
                 <div class="events__pagination swiper-pagination"></div>
-                <div class="events__btn_container"><button class="btn-reset outline-focus events__button">Все
+                <div class="events__btn-container"><button class="btn-reset outline-focus events__button">Все
                         события</button>
                 </div>
             </div>
@@ -1398,86 +1441,86 @@
     </section>
     <section id="editions" class="editions section-offset">
         <div class="editions__container container flex">
-            <div class="editions__left">
+            <div class="editions__left categories">
                 <h2 class="section-title editions__title">Издания</h2>
                 <h3 class="categories__title">Категории</h3>
                 <div class="categories__checkbox">
                     <label for="check_1" class="categories__label">
                         <input type="checkbox" name="check" class="checkbox" id="check_1">
-                        <span class="custom_check"></span>
-                        <span class="label__text"> Бестселлеры </span>
+                        <span class="custom-check"></span>
+                        <span class="label-text"> Бестселлеры </span>
                     </label>
                     <label for="check_2" class="categories__label">
                         <input type="checkbox" name="check" class="checkbox" id="check_2">
-                        <span class="custom_check"></span>
-                        <span class="label__text"> Искусство </span>
+                        <span class="custom-check"></span>
+                        <span class="label-text"> Искусство </span>
                     </label>
                     <label for="check_3" class="categories__label">
                         <input type="checkbox" name="check" class="checkbox" id="check_3">
-                        <span class="custom_check"></span>
-                        <span class="label__text"> Архитектура </span>
+                        <span class="custom-check"></span>
+                        <span class="label-text"> Архитектура </span>
                     </label>
                     <label for="check_4" class="categories__label">
                         <input type="checkbox" name="check" class="checkbox" id="check_4">
-                        <span class="custom_check"></span>
-                        <span class="label__text"> Дизайн </span>
+                        <span class="custom-check"></span>
+                        <span class="label-text"> Дизайн </span>
                     </label>
                     <label for="check_5" class="categories__label">
                         <input type="checkbox" name="check" class="checkbox" id="check_5">
-                        <span class="custom_check"></span>
-                        <span class="label__text"> Мода </span>
+                        <span class="custom-check"></span>
+                        <span class="label-text"> Мода </span>
                     </label>
                     <label for="check_6" class="categories__label">
                         <input type="checkbox" name="check" class="checkbox" id="check_6">
-                        <span class="custom_check"></span>
-                        <span class="label__text"> Детям </span>
+                        <span class="custom-check"></span>
+                        <span class="label-text"> Детям </span>
                     </label>
                     <label for="check_7" class="categories__label">
                         <input type="checkbox" name="check" class="checkbox" id="check_7">
-                        <span class="custom_check"></span>
-                        <span class="label__text"> Художественная литература </span>
+                        <span class="custom-check"></span>
+                        <span class="label-text"> Художественная литература </span>
                     </label>
                     <label for="check_8" class="categories__label">
                         <input type="checkbox" name="check" class="checkbox" id="check_8">
-                        <span class="custom_check"></span>
-                        <span class="label__text"> Публицистика </span>
+                        <span class="custom-check"></span>
+                        <span class="label-text"> Публицистика </span>
                     </label>
                     <label for="check_9" class="categories__label">
                         <input type="checkbox" name="check" class="checkbox" id="check_9">
-                        <span class="custom_check"></span>
-                        <span class="label__text"> Путеводители </span>
+                        <span class="custom-check"></span>
+                        <span class="label-text"> Путеводители </span>
                     </label>
                     <label for="check_10" class="categories__label">
                         <input type="checkbox" name="check" class="checkbox" id="check_10">
-                        <span class="custom_check"></span>
-                        <span class="label__text"> Философия </span>
+                        <span class="custom-check"></span>
+                        <span class="label-text"> Философия </span>
                     </label>
                     <label for="check_11" class="categories__label">
                         <input type="checkbox" name="check" class="checkbox" id="check_11">
-                        <span class="custom_check"></span>
-                        <span class="label__text"> Учебная литература </span>
+                        <span class="custom-check"></span>
+                        <span class="label-text"> Учебная литература </span>
                     </label>
                     <label for="check_12" class="categories__label">
                         <input type="checkbox" name="check" class="checkbox" id="check_12">
-                        <span class="custom_check"></span>
-                        <span class="label__text"> Журналы и газеты </span>
+                        <span class="custom-check"></span>
+                        <span class="label-text"> Журналы и газеты </span>
                     </label>
                 </div>
-                <div class="editions__filter">
-                    <h2 class="filter__title">Цена</h2>
+                <div class="editions__filter filter">
+                    <h4 class="filter__title">Цена</h4>
                     <div class="filter__range flex">
-                        <div class="filter__start flex">
+                        <div class="filter__start flex start">
                             <span class="start__text">От</span>
                             <div class="price">
                                 <input type="text" placeholder="50" class="start__input">
                             </div>
                         </div>
-                        <div class="filter__end flex">
+                        <div class="filter__end end flex">
                             <span class="end__text">до</span>
                             <div class="price">
                                 <input type="text" placeholder="25000" class="end__input">
                             </div>
-                            <span class="end__text_alert">руб.</span>
+                            <span class="end__text-alert">руб.</span>
                         </div>
                     </div>
                 </div>
@@ -1517,98 +1560,98 @@
                                 <source srcset="img/editions/edition-1-1024.jpg" media="(max-width:1024px)">
                                 <img src="img/editions/edition-1.jpg" alt="Edition image 1" class="editions__img">
                             </picture>
-                            <div class="editions__slide_container flex">
+                            <div class="editions__slide-container slide flex">
                                 <div class="slide__descr">
                                     <h3 class="slide__title">Искусство цвета</h3>
                                     <p class="section-descr slide__par">Иттен, Иоханнес </p>
                                 </div>
-                                <p class="slide__par_alert">620 руб</p>
+                                <p class="slide__par-alert">620 руб</p>
                             </div>
-                            <button class="btn-reset slide__button outline-focus">Заказать</button>
+                            <button class="btn-reset slide-button outline-focus" aria-label="Заказать">Заказать</button>
                         </div>
                         <div class="swiper-slide editions__swiper-slide">
                             <picture>
                                 <source srcset="img/editions/edition-2-1024.jpg" media="(max-width:1024px)">
                                 <img src="img/editions/edition-2.jpg" alt="Edition image 2" class="editions__img">
                             </picture>
-                            <div class="editions__slide_container flex">
+                            <div class="editions__slide-container slide flex">
                                 <div class="slide__descr">
                                     <h3 class="slide__title">Типографика</h3>
                                     <p class="section-descr slide__par">Рудер, Эмиль</p>
                                 </div>
-                                <p class="slide__par_alert">2 450 руб</p>
+                                <p class="slide__par-alert">2 450 руб</p>
                             </div>
-                            <button class="btn-reset slide__button outline-focus">Заказать</button>
+                            <button class="btn-reset slide-button outline-focus" aria-label="Заказать">Заказать</button>
                         </div>
                         <div class="swiper-slide editions__swiper-slide">
                             <picture>
                                 <source srcset="img/editions/edition-3-1024.jpg" media="(max-width:1024px)">
                                 <img src="img/editions/edition-3.jpg" alt="Edition image 3" class="editions__img">
                             </picture>
-                            <div class="editions__slide_container flex">
+                            <div class="editions__slide-container slide flex">
                                 <div class="slide__descr">
                                     <h3 class="slide__title">Книга про буквы</h3>
                                     <p class="section-descr slide__par">Гордон, Юрий</p>
                                 </div>
-                                <p class="slide__par_alert">2 200 руб</p>
+                                <p class="slide__par-alert">2 200 руб</p>
                             </div>
-                            <button class="btn-reset slide__button outline-focus">Заказать</button>
+                            <button class="btn-reset slide-button outline-focus" aria-label="Заказать">Заказать</button>
                         </div>
                         <div class="swiper-slide editions__swiper-slide">
                             <picture>
                                 <source srcset="img/editions/edition-4-1024.jpg" media="(max-width:1024px)">
                                 <img src="img/editions/edition-4.jpg" alt="Edition image 4" class="editions__img">
                             </picture>
-                            <div class="editions__slide_container flex">
+                            <div class="editions__slide-container slide flex">
                                 <div class="slide__descr">
                                     <h3 class="slide__title">Николай Ильин</h3>
                                     <p class="section-descr slide__par">Кричевский, Владимир</p>
                                 </div>
-                                <p class="slide__par_alert">1 100 руб</p>
+                                <p class="slide__par-alert">1 100 руб</p>
                             </div>
-                            <button class="btn-reset slide__button outline-focus">Заказать</button>
+                            <button class="btn-reset slide-button outline-focus" aria-label="Заказать">Заказать</button>
                         </div>
                         <div class="swiper-slide editions__swiper-slide">
                             <picture>
                                 <source srcset="img/editions/edition-5-1024.jpg" media="(max-width:1024px)">
                                 <img src="img/editions/edition-5.jpg" alt="Edition image 5" class="editions__img">
                             </picture>
-                            <div class="editions__slide_container flex">
+                            <div class="editions__slide-container slide flex">
                                 <div class="slide__descr">
                                     <h3 class="slide__title">Модульные сетки в граф...</h3>
                                     <p class="section-descr slide__par">Мюллер-Брокманн, Йозеф </p>
                                 </div>
-                                <p class="slide__par_alert">1 450 руб</p>
+                                <p class="slide__par-alert">1 450 руб</p>
                             </div>
-                            <button class="btn-reset slide__button outline-focus">Заказать</button>
+                            <button class="btn-reset slide-button outline-focus" aria-label="Заказать">Заказать</button>
                         </div>
                         <div class="swiper-slide editions__swiper-slide">
                             <picture>
                                 <source srcset="img/editions/edition-6-1024.jpg" media="(max-width:1024px)">
                                 <img src="img/editions/edition-6.jpg" alt="Edition image 6" class="editions__img">
                             </picture>
-                            <div class="editions__slide_container flex">
+                            <div class="editions__slide-container slide flex">
                                 <div class="slide__descr">
                                     <h3 class="slide__title">Эволюция графических ст...</h3>
                                     <p class="section-descr slide__par">Хеллер, Чваст</p>
                                 </div>
-                                <p class="slide__par_alert">3 200 руб</p>
+                                <p class="slide__par-alert">3 200 руб</p>
                             </div>
-                            <button class="btn-reset slide__button outline-focus">Заказать</button>
+                            <button class="btn-reset slide-button outline-focus" aria-label="Заказать">Заказать</button>
                         </div>
                         <div class="swiper-slide editions__swiper-slide">
                             <picture>
                                 <source srcset="img/editions/edition-7-1024.jpg" media="(max-width:1024px)">
                                 <img src="img/editions/edition-7.jpg" alt="Edition image 7" class="editions__img">
                             </picture>
-                            <div class="editions__slide_container flex">
+                            <div class="editions__slide-container slide flex">
                                 <div class="slide__descr">
                                     <h3 class="slide__title">Искусство и визуальное в...</h3>
                                     <p class="section-descr slide__par">Арнхейм, Рудольф </p>
                                 </div>
-                                <p class="slide__par_alert">2 200 руб</p>
+                                <p class="slide__par-alert">2 200 руб</p>
                             </div>
-                            <button class="btn-reset slide__button outline-focus">Заказать</button>
+                            <button class="btn-reset slide-button outline-focus" aria-label="Заказать">Заказать</button>
                         </div>
                     </div>
                 </div>
@@ -1619,14 +1662,14 @@
                             <source srcset="img/editions/edition-1-1024.jpg" media="(max-width:1024px)">
                             <img src="img/editions/edition-1.jpg" alt="Edition image 1" class="editions__img">
                         </picture>
-                        <div class="editions__slide_container flex">
+                        <div class="editions__slide-container slide flex">
                             <div class="slide__descr">
                                 <h3 class="slide__title">Искусство цвета</h3>
                                 <p class="section-descr slide__par">Иттен, Иоханнес </p>
                             </div>
-                            <p class="slide__par_alert">620 руб</p>
+                            <p class="slide__par-alert">620 руб</p>
                         </div>
-                        <button class="btn-reset slide__button">Заказать</button>
+                        <button class="btn-reset slide-button">Заказать</button>
                     </div>
                     <div class="swiper-slide editions__swiper-slide">
                         <picture>
@@ -1634,14 +1677,14 @@
                             <source srcset="img/editions/edition-2-1024.jpg" media="(max-width:1024px)">
                             <img src="img/editions/edition-2.jpg" alt="Edition image 2" class="editions__img">
                         </picture>
-                        <div class="editions__slide_container flex">
+                        <div class="editions__slide-container slide flex">
                             <div class="slide__descr">
                                 <h3 class="slide__title">Типографика</h3>
                                 <p class="section-descr slide__par">Рудер, Эмиль</p>
                             </div>
-                            <p class="slide__par_alert">2 450 руб</p>
+                            <p class="slide__par-alert">2 450 руб</p>
                         </div>
-                        <button class="btn-reset slide__button">Заказать</button>
+                        <button class="btn-reset slide-button">Заказать</button>
                     </div>
                     <div class="swiper-slide editions__swiper-slide">
                         <picture>
@@ -1649,14 +1692,14 @@
                             <source srcset="img/editions/edition-3-1024.jpg" media="(max-width:1024px)">
                             <img src="img/editions/edition-3.jpg" alt="Edition image 3" class="editions__img">
                         </picture>
-                        <div class="editions__slide_container flex">
+                        <div class="editions__slide-container slide flex">
                             <div class="slide__descr">
                                 <h3 class="slide__title">Книга про буквы</h3>
                                 <p class="section-descr slide__par">Гордон, Юрий</p>
                             </div>
-                            <p class="slide__par_alert">2 200 руб</p>
+                            <p class="slide__par-alert">2 200 руб</p>
                         </div>
-                        <button class="btn-reset slide__button">Заказать</button>
+                        <button class="btn-reset slide-button">Заказать</button>
                     </div>
                     <div class="swiper-slide editions__swiper-slide">
                         <picture>
@@ -1664,14 +1707,14 @@
                             <source srcset="img/editions/edition-4-1024.jpg" media="(max-width:1024px)">
                             <img src="img/editions/edition-4.jpg" alt="Edition image 4" class="editions__img">
                         </picture>
-                        <div class="editions__slide_container flex">
+                        <div class="editions__slide-container slide flex">
                             <div class="slide__descr">
                                 <h3 class="slide__title">Николай Ильин</h3>
                                 <p class="section-descr slide__par">Кричевский, Владимир</p>
                             </div>
-                            <p class="slide__par_alert">1 100 руб</p>
+                            <p class="slide__par-alert">1 100 руб</p>
                         </div>
-                        <button class="btn-reset slide__button">Заказать</button>
+                        <button class="btn-reset slide-button">Заказать</button>
                     </div>
                     <div class="swiper-slide editions__swiper-slide">
                         <picture>
@@ -1679,14 +1722,14 @@
                             <source srcset="img/editions/edition-5-1024.jpg" media="(max-width:1024px)">
                             <img src="img/editions/edition-5.jpg" alt="Edition image 5" class="editions__img">
                         </picture>
-                        <div class="editions__slide_container flex">
+                        <div class="editions__slide-container slide flex">
                             <div class="slide__descr">
                                 <h3 class="slide__title">Модульные сетки в граф...</h3>
                                 <p class="section-descr slide__par">Мюллер-Брокманн, Йозеф </p>
                             </div>
-                            <p class="slide__par_alert">1 450 руб</p>
+                            <p class="slide__par-alert">1 450 руб</p>
                         </div>
-                        <button class="btn-reset slide__button">Заказать</button>
+                        <button class="btn-reset slide-button">Заказать</button>
                     </div>
                     <div class="swiper-slide editions__swiper-slide">
                         <picture>
@@ -1694,14 +1737,14 @@
                             <source srcset="img/editions/edition-6-1024.jpg" media="(max-width:1024px)">
                             <img src="img/editions/edition-6.jpg" alt="Edition image 6" class="editions__img">
                         </picture>
-                        <div class="editions__slide_container flex">
+                        <div class="editions__slide-container slide flex">
                             <div class="slide__descr">
                                 <h3 class="slide__title">Эволюция графических ст...</h3>
                                 <p class="section-descr slide__par">Хеллер, Чваст</p>
                             </div>
-                            <p class="slide__par_alert">3 200 руб</p>
+                            <p class="slide__par-alert">3 200 руб</p>
                         </div>
-                        <button class="btn-reset slide__button">Заказать</button>
+                        <button class="btn-reset slide-button">Заказать</button>
                     </div>
                     <div class="swiper-slide editions__swiper-slide">
                         <picture>
@@ -1709,14 +1752,14 @@
                             <source srcset="img/editions/edition-7-1024.jpg" media="(max-width:1024px)">
                             <img src="img/editions/edition-7.jpg" alt="Edition image 7" class="editions__img">
                         </picture>
-                        <div class="editions__slide_container flex">
+                        <div class="editions__slide-container slide flex">
                             <div class="slide__descr">
                                 <h3 class="slide__title">Искусство и визуальное в...</h3>
                                 <p class="section-descr slide__par">Арнхейм, Рудольф </p>
                             </div>
-                            <p class="slide__par_alert">2 200 руб</p>
+                            <p class="slide__par-alert">2 200 руб</p>
                         </div>
-                        <button class="btn-reset slide__button">Заказать</button>
+                        <button class="btn-reset slide-button">Заказать</button>
                     </div>
                 </div>
             </div>
@@ -1770,7 +1813,7 @@
                     <a href="" class="projects__link bg-focus">blanchard-art.ru/projects/about</a>
                 </p>
             </div>
-            <div class="projects__down">
+            <div class="projects__down down">
                 <h3 class="down__title">Партнёры проектов:</h3>
                 <div class="projects__swiper swiper">
                     <div class="projects__swiper-wrapper swiper-wrapper">
@@ -1856,12 +1899,12 @@
         <div class="contacts__body">
             <div class="contacts__container flex">
 
-                <div class="contacts__left flex">
+                <div class="contacts__left left flex">
                     <div class="left__info flex">
-                        <h4 class="left__str">Шоурум №4</h4>
-                        <p class="left__str_alert">Леонтьевский переулок, дом 5/1</p>
-                        <h3 class="form__title">Заказать обратный звонок</h3>
-                        <form class="left__form js-form flex" action="#">
+                        <span class="left__str">Шоурум №4</span>
+                        <p class="left__str-alert">Леонтьевский переулок, дом 5/1</p>
+                        <h3 class="form-title">Заказать обратный звонок</h3>
+                        <form class="left__form form js-form flex" action="#">
                             <input type="text" class="form__input form-control" placeholder="Имя*" autocomplete="on"
                                 data-validate-field="name" name="name" id="name">
                             <input type="tel" class="form__input form-control" placeholder="Телефон*" autocomplete="on"
@@ -1876,9 +1919,9 @@
                         </div>
                     </div>
                 </div>
-                <div id="map" class="contacts__right">
-                    <h4 class="left__str left__str_visible">Шоурум №4</h4>
-                    <p class="left__str_alert left__str_visible">Леонтьевский переулок, дом 5/1</p>
+                <div id="map" class="contacts__right left">
+                    <span class="left__str left__str-visible">Шоурум №4</span>
+                    <p class="left__str-alert left__str-visible">Леонтьевский переулок, дом 5/1</p>
                 </div>
 
             </div>
@@ -1887,7 +1930,7 @@
     </section>
     <footer class="footer">
         <div class="footer__container container flex">
-            <a href="#" class="header__logo" aria-label="Blanchard">
+            <a href="#" class="footer__logo" aria-label="Blanchard">
                 <svg width="173" height="40" viewBox="0 0 173 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M2.78965 32.7802L0.289746 29.1348H2.09561L3.79365 31.7425L5.50518 29.1348H7.29756L4.79092 32.7802L7.42559 36.5873H5.6332L3.79365 33.7977L1.96084 36.5873H0.168457L2.78965 32.7802Z"
@@ -2011,7 +2054,7 @@
     </footer>
     <script src="js/choices.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
     <script src="js/hero__swiper.js"></script>
     <script src="js/gallery__swiper.js"></script>
     <script src="js/header-menu.js"></script>

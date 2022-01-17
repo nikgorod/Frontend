@@ -1,11 +1,6 @@
-var selector = document.getElementById("phone");
-
-var im = new Inputmask("+7 (999)-999-99-99");
-im.mask(selector);
 
 new JustValidate('.left__form', {
-  colorWrong: '#FF5C00',
-
+  colorWrong: '#D11616',
   rules: {
     name: {
       required: true,
@@ -13,6 +8,7 @@ new JustValidate('.left__form', {
       errorMessage: 'Недопустимый формат',
       minLength: 3,
       maxLength: 15,
+      
     },
 
     phone: {
@@ -26,3 +22,8 @@ new JustValidate('.left__form', {
     },
   }
 });
+
+var selector = document.getElementById("phone");
+
+var im = new Inputmask("+7 (999)-999-99-99");
+im.mask(selector);

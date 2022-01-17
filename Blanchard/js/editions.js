@@ -41,28 +41,6 @@ editionSwiper = new Swiper(sliderEdit, {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const editionSwiper = new Swiper('.editions__swiper', {
     slidesPerView: 3,
     slidesPerGroup: 3,

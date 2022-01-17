@@ -10,16 +10,17 @@ function hideIt() {
   $( ".burger-exit" ).click( hideIt );
 
 function searchIt() {
-    $( ".search-alert" ).show( "slow" );
-    $( ".search-close" ).show( "slow" );
-    $( ".search-button" ).hide( "slow" );
+    $( ".search-alert" ).show("fast" );
+    $( ".search-close" ).show( );
+    $( ".search-button" ).hide( );
   }
 $( ".search-button" ).click( searchIt );
 
 function searchclose() {
-  $( ".search-alert" ).hide( "slow" );
-  $( ".search-close" ).hide( "slow" );
-  $( ".search-button" ).show( "slow" );
+  $( ".search-alert" ).hide( );
+  $( ".search-close" ).hide( );
+  $( ".search-button" ).show( );
 }
-$( ".search-close" ).click( searchclose );
+$( ".search-close" ).click(searchclose);
+
 

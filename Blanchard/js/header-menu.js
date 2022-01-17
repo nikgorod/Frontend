@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
-    document.querySelectorAll(".header__menu_button").forEach(item => {
+    document.querySelectorAll(".header__menu-button").forEach(item => {
     item.addEventListener("click", function() {
       let btn = this;
       let dropdown = this.parentElement.querySelector(".dropdown-container");
       
-      document.querySelectorAll(".header__menu_button").forEach(el => {
+      document.querySelectorAll(".header__menu-button").forEach(el => {
         if (el != btn) {
-          el.classList.remove("header__menu_button-active");
+          el.classList.remove("header__menu-button-active");
         }
       });
       
@@ -16,18 +16,18 @@ document.addEventListener("DOMContentLoaded", function() {
         }
       })
       dropdown.classList.toggle("dropdown-container_active");
-      btn.classList.toggle("header__menu_button-active")
+      btn.classList.toggle("header__menu-button-active")
     })
   })
   
   document.addEventListener("click", function(e) {
     let target = e.target;
-    if (!target.closest(".header__menu_list")) {
+    if (!target.closest(".header__menu-list")) {
       document.querySelectorAll(".dropdown-container").forEach(el => {
           el.classList.remove("dropdown-container_active");
       })
-       document.querySelectorAll(".header__menu_button").forEach(el => {
-          el.classList.remove("header__menu_button-active");
+       document.querySelectorAll(".header__menu-button").forEach(el => {
+          el.classList.remove("header__menu-button-active");
       });
     }
   })

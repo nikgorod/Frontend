@@ -1,6 +1,6 @@
 ymaps.ready(function () {
     var myMap = new ymaps.Map('map', {
-            center: [55.753220, 37.622513],
+            center: [55.758032, 37.600613],
             zoom: 14
         }, {
             searchControlProvider: 'yandex#search'
@@ -32,7 +32,9 @@ ymaps.ready(function () {
             iconContentLayout: MyIconContentLayout
         });
   
-    myMap.geoObjects
-    .add(myPlacemarkWithContent);
+    myMap.geoObjects.add(myPlacemarkWithContent); 
+    myMap.behaviors.disable('multiTouch');
+    myMap.behaviors.disable('drag');
+    myMap.behaviors.disable('scrollZoom');
   });
   
