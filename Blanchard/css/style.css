@@ -1642,6 +1642,12 @@ body {
     transition: background-color .3s ease-in-out;
 }
 
+.input-div {
+    display: flex;
+    flex-direction: column-reverse;
+
+}
+
 
 
 ::-webkit-input-placeholder {color:#999999}

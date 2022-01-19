@@ -5,7 +5,6 @@ new JustValidate('.left__form', {
     name: {
       required: true,
       rule: 'String',
-      errorMessage: 'Недопустимый формат',
       minLength: 3,
       maxLength: 15,
       
@@ -13,13 +12,16 @@ new JustValidate('.left__form', {
 
     phone: {
       required: true,
-      errorMessage: 'Недопустимый формат',
       function: (name,value) => {
         const tel = selector.inputmask.unmaskedvalue()
-
         return Number(tel) && tel.length == 10
       }
     },
+  },
+
+  messages: {
+    name : "Недопустимый формат",
+    phone: "Недопустимый формат",
   }
 });
 
