@@ -4,7 +4,7 @@ let projectsSlider = new Swiper('.projects__swiper', {
       prevEl: ".projects__prev",
       centeredSlides:true,
     },
-    loop:true,
+    loop: false,
     breakpoints: {
 
       320: {

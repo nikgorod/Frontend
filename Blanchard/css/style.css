@@ -1215,6 +1215,7 @@ body {
 }
 
 .categories__label {
+    position: relative;
     display: flex;
     line-height: 32px;
     font-weight: 400;
@@ -1298,6 +1299,19 @@ body {
 
 .checkbox:focus ~ .label-text{
     color: var(--color-hover)
+}
+
+.categories__btn {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    right: 0;
+    bottom: 24px;
+    opacity: 0;
+}
+
+.checkbox:checked ~ .categories__btn {
+    opacity: 1; visibility: visible; 
 }
 
 .filter__range {
@@ -1500,18 +1514,12 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    outline: 1px solid #CACACA;
+    outline-offset: -1px;
+    transition: outline .3s ease-in-out;
 }
 
-.projects__slide::before {
-    position: absolute;
-    content: '';
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    border: 1px solid #CACACA;
-    transition: border-color .3s ease-in-out;
-}
+
 
 
 .projects__swiper {
@@ -1537,17 +1545,20 @@ body {
     right: 0;
 }
 
+
+
 /* contacts  */
 
 
-.contacts__body {
+
+
+
+.contacts__container {
     position: relative;
-    max-width: 1920px;
-    margin: 0 auto;
     min-height: 700px;
 }
 
-.contacts__body::before {
+.contacts__container::before {
     position: absolute;
     content: '';
     top: 0;
@@ -1557,27 +1568,23 @@ body {
 
 }
 
-.contacts__container {
-    min-height: 700px;
-    margin-right: 0;
-    max-width: 1920px;
-}
-
 .contacts__left {
-    width: 36.5%;
+    width: 35.5%;
     min-width: 400px;
     min-height: 700px;
     padding-top: 124px;
-    padding-left: 33px;
+    padding-left: max(15px, calc((100% - 1703px) / 2 + 50px) );
     padding-bottom: 50px;
-    justify-content: center;
 }
 
 .contacts__right {
     position: relative;
-    max-width: 1238px;
-    width: 100%;
+    width: calc(65% + 1px);
     min-height: 700px;
+}
+
+.ymaps-2-1-79-map {
+    width: 100%;
 }
 
 [class*="ground-pane"] {
@@ -1643,9 +1650,19 @@ body {
 }
 
 .input-div {
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
 
+}
+
+.js-validate-error-label {
+    position: absolute;
+    top: -20px;
+    margin-left: 18px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
 }
 
 
@@ -1706,6 +1723,10 @@ body {
     height: 45px;
     background-repeat: no-repeat;
     background-size: cover;
+
+}
+
+.footer__link svg path {
     transition: fill .3s ease-in-out;
 }
 
@@ -1941,9 +1962,24 @@ body {
     border: 2px solid var(--color-focus);
 }
 
+.ui-accordion-header-active {
+    margin-top: -1px;
+    color: var(--color-active);
+    border-bottom: 1px solid var(--color-active);
+    border-top: 1px solid var(--color-active);
+    background-image: url('../img/catalog/catalog-bird-active.svg');
+    transition-property: background-image;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
+}
+
 .ui-accordion-header:hover {
     color: var(--color-purple);
     background-image: url('../img/catalog/catalog-bird-hover.svg');
+}
+
+.ui-accordion-header-active:hover {
+    background-image: url('../img/catalog/catalog-bird-active.svg');
 }
 
 .catalog__right-item:hover {
@@ -1963,13 +1999,7 @@ body {
 }
 
 
-.ui-accordion-header-active {
-    margin-top: -1px;
-    color: var(--color-active);
-    border-bottom: 1px solid var(--color-active);
-    border-top: 1px solid var(--color-active);
-    background-image: url('../img/catalog/catalog-bird-active.svg');
-}
+
 
 .right-container__btn:hover {
     color: var(--color-hover);
@@ -2046,6 +2076,10 @@ body {
     background-color: var(--color-hover);
 }
 
+#tippy-1 {
+    animation: load 1s infinite linear;
+}
+
 .projects__img {
     filter: grayscale(100%) contrast(30%);
     transition: filter .3s ease-in-out;
@@ -2058,12 +2092,15 @@ body {
 }
 
 
-.projects__slide:active::before,
-.projects__slide:focus::before {
-    border: 1px solid var(--color-purple);
+.projects__slide:active,
+.projects__slide:focus {
+    outline: 1px solid var(--color-purple);
 }
 
-
+.projects__prev:disabled svg,
+.projects__next:disabled svg{
+    filter: opacity(0.4);
+}
 
 .projects__next:hover svg,
 .projects__next:active svg{
@@ -2082,6 +2119,8 @@ body {
     border-radius: 100px;
     outline: 2px solid var(--color-active);
 }
+
+
 
 .projects__link:hover {
     border-bottom: 1px solid var(--color-purple);
@@ -2142,10 +2181,6 @@ body {
         max-height: 384px;
     }
 
-    .contacts__left {
-        padding-left: 15px;
-        justify-content: flex-start;
-    }
 }
 
 @media (max-width:1024px) {
@@ -2446,7 +2481,7 @@ body {
     }
 
     .contacts__left {
-        width: 66.5%;
+        width: 61.5%;
         padding-left: 50px;
     }
 
@@ -2729,7 +2764,7 @@ body {
     }
 
     .editions__title {
-        margin-bottom: 23px;
+        margin-bottom: 17px;
     }
 
     .editions__right {
@@ -2881,7 +2916,6 @@ body {
     }
 
     .x-span {
-        background-image: url('../img/editions/X.svg');
         background-size: 12px 12px;
         background-repeat: no-repeat;
         background-position: right center;
@@ -2937,15 +2971,15 @@ body {
     }
 
     .burger-menu {
-        min-height: 638px;
+        min-height: 438px;
     }
 
-    .header__nav_alert {
+    .header__nav-alert {
         min-height: 327px;
-        padding-bottom: 50px;
+        padding-bottom: 20px;
     }
 
-    .header__nav_alert-list {
+    .header__alert-list {
         min-height: 290px;
     }
 
@@ -3042,6 +3076,13 @@ body {
         width: 100%;
     }
 
+    .events__descr-alert {
+        max-width: none;
+    }
+    .events__title-alert {
+        max-width: none;
+    }
+
     .swiper-pagination-bullet {
         width: 10px;
         height: 10px;
@@ -3085,6 +3126,10 @@ body {
         flex-direction: column;
     }
 
+    .contacts__container::before {
+        display: none;
+    }
+
     .contacts__left {
         order: 1;
         padding-left: 15px;
@@ -3093,11 +3138,12 @@ body {
     }
 
     .contacts__right {
+        width: 100%;
         max-width: 100%;
         min-height: 400px;
     }
 
-    ymaps {
+    .ymaps {
         max-height: 320px;
     }
 
@@ -3115,6 +3161,10 @@ body {
 
     .contacts__body {
         border: none;
+    }
+
+    .footer__links {
+        margin-bottom: 10px;
     }
 
     .footer {
@@ -3545,7 +3595,7 @@ body {
 
     .left__str-alert {
         font-size: 14px;
-        line-height: 19px;
+        line-height: 0px;
     }
 
     .contacts__left {
@@ -3554,8 +3604,17 @@ body {
         padding-bottom: 24px;
     }
 
+    .contacts__right {
+        max-height: 320px;
+    }
+
+    .ymaps-2-1-79-map {
+        max-height: 320px;
+    }
+
     .form-title {
         font-size: 18px;
+        margin-bottom: 10px;
     }
 
     .ymaps {
