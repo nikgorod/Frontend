@@ -1310,9 +1310,7 @@ body {
     opacity: 0;
 }
 
-.checkbox:checked ~ .categories__btn {
-    opacity: 1; visibility: visible; 
-}
+
 
 .filter__range {
     width: 277px;
@@ -3107,6 +3105,10 @@ body {
 
     .editions {
         background-image: url('../img/editions/editions-576.jpg');
+    }
+
+    .checkbox:checked ~ .categories__btn {
+        opacity: 1; visibility: visible; 
     }
 
     .editions__right {
