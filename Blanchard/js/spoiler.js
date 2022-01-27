@@ -20,7 +20,7 @@ document.querySelectorAll(".categories__label").forEach(el => {
     if (!checklist.classList.contains("checklist__active")) {
       label.classList.remove("label-active");
       label.classList.remove("x-span");
-      el.style.color = "#C283F3";
+      /*el.style.color = "#C283F3";*/
 
     } 
   });

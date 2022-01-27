@@ -201,12 +201,10 @@ body {
     position: relative;
     font-size: 18px;
     color: var(--color-white);
-    padding-left: 20px;
-    background-image: url(../img/entry.svg);
-    background-repeat: no-repeat;
-    background-size: 13px 13px;
-    background-position-y: 50%;
-    transition: background-image .5s ease-in-out;
+}
+
+.header__entry svg path{
+    transition: fill .3s ease-in-out;
 }
 
 .header__menu {
@@ -915,6 +913,7 @@ body {
 }
 
 .catalog__right-container {
+    align-items: center;
     padding-left: 12px;
     padding-top: 30px;
     padding-bottom: 23px;
@@ -1016,6 +1015,13 @@ body {
     transition-timing-function: ease-in-out;
 }
 
+.right-error-info__link {
+    color: #9D5CD0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+
 .catalog__right-title {
     font-weight: 600;
     font-size: 24px;
@@ -1037,6 +1043,7 @@ body {
 .right-error-info__descr {
     max-width: 275px;
     margin-bottom: 5px;
+    line-height: 22px;
 }
 
 .catalog__left-title-focus {
@@ -1234,7 +1241,7 @@ body {
     color: var(--color-hover);
 }
 
-.label-text:focus,
+.label-text:focus-visible,
 .label-text:active {
     color: var(--color-hover);
 }
@@ -1266,6 +1273,7 @@ body {
     border-color: var(--color-hover);
 }
 
+
 .categories__label:focus .custom-check,
 .categories__label:active .custom-check {
     border-color: var(--color-active);
@@ -1289,15 +1297,15 @@ body {
     opacity: 1;
 }
 
-.checkbox:checked  .label-text {
+.checkbox:checked ~ .label-text {
     color: var(--color-hover);
 }
 
-.checkbox:focus ~ .custom-check {
+.checkbox:focus-visible ~ .custom-check {
     border: 1px solid var(--color-hover);
 }
 
-.checkbox:focus ~ .label-text{
+.checkbox:focus-visible ~ .label-text{
     color: var(--color-hover)
 }
 
@@ -1543,6 +1551,13 @@ body {
     right: 0;
 }
 
+.projects__next.swiper-button-disabled,
+.projects__prev.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto;
+    pointer-events: none;
+}
+
 
 
 /* contacts  */
@@ -1745,9 +1760,6 @@ body {
     transition: color .2s ease-in-out;
 }
 
-.header__entry {
-    transition: background-image .05s ease-in-out;
-}
 
 *:focus-visible {
     outline: 0;
@@ -1765,6 +1777,15 @@ body {
     opacity: 0;
     transition: opacity .4s ease-in-out;
 }
+
+.catalog__left-title-focus::before,
+.right-container__btn::before,
+.events__link::before,
+.projects__link::before {
+    background-color: #9D5CD0;
+}
+
+
 
 .outline-focus:before {
     background-color: transparent;
@@ -1873,17 +1894,20 @@ body {
     color: var(--color-active);
 }
 
-.header__entry:active {
-    color: var(--color-purple);
-}
 
-.header__entry:hover {
-    background-image: url('../img/entry-hover.svg');
+
+.header__entry:hover svg path{
+    fill: #C283F3;
 }
 
 .header__entry:active {
-    background-image: url('../img/entry-active.svg');
+    color: #9D5CD0;
 }
+
+.header__entry:active svg path{
+    fill: #9D5CD0;
+}
+
 
 .burger-entry:active{
     background-color: var(--color-active);
@@ -1980,10 +2004,10 @@ body {
     background-image: url('../img/catalog/catalog-bird-active.svg');
 }
 
+
 .catalog__right-item:hover {
     border-top: 1px solid var(--color-purple);
     border-bottom: 1px solid var(--color-purple);
-
 }
 
 .catalog__right-item:active {
@@ -1991,24 +2015,25 @@ body {
     border-top: 1px solid var(--color-active);
 }
 
-.ui-accordion-header:focus {
+.ui-accordion-header:focus-visible {
     background-image: url('../img/catalog/catalog-bird-hover.svg');
     color: var(--color-white);
 }
 
-
-
+.ui-accordion-header:focus-visible .catalog__left-title-focus {
+    background-color: #9D5CD0;
+}
 
 .right-container__btn:hover {
     color: var(--color-hover);
     border-bottom: 1px solid var(--color-hover);
 }
 
-.right-container__btn:focus::before {
+.right-container__btn:focus-visible::before {
     opacity: 1;
 }
 
-.right-container__btn:focus {
+.right-container__btn:focus-visible {
     color: var(--color-white);
 }
 
@@ -2055,9 +2080,9 @@ body {
     background-color: var(--color-active);
 }
 
-.catalog__right-title:focus .bg-focus::before {
+/*.catalog__right-title:focus .bg-focus::before {
     opacity: 1;
-}
+}*/
 
 .slide-button:hover {
     background-color: var(--color-purple);
@@ -2095,10 +2120,6 @@ body {
     outline: 1px solid var(--color-purple);
 }
 
-.projects__prev:disabled svg,
-.projects__next:disabled svg{
-    filter: opacity(0.4);
-}
 
 .projects__next:hover svg,
 .projects__next:active svg{
@@ -2177,6 +2198,10 @@ body {
 
     .right-container__list {
         max-height: 384px;
+    }
+
+    .header__entry {
+        min-width: 80px;
     }
 
 }
@@ -2885,6 +2910,7 @@ body {
         flex-direction: column;
         max-height: none;
         max-width: 290px;
+        
     }
 
     .categories__title {
@@ -2896,6 +2922,7 @@ body {
         background-repeat: no-repeat;
         background-size: 14px 14px;
         background-position: right center;
+        transition: background-image .3s ease-in-out;
     }
 
     .title-active {
@@ -2909,8 +2936,7 @@ body {
     .categories__label.label-active {
         display: block;
         padding: 5px 0;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5)
     }
 
     .x-span {
@@ -2957,6 +2983,19 @@ body {
         padding-bottom: 20px;
         padding-top: 20px;
     }
+
+    .burger-button {
+        width: 29px;
+        height: 23px;
+        background-image: url('../img/burger-button-320.svg');
+    }
+
+    .search-button {
+        width: 29px;
+        height: 26px;
+    }
+
+
 
     .hero__swiper {
         min-height: 368px;
@@ -3052,6 +3091,29 @@ body {
         align-items: flex-start;
     }
 
+    .catalog__right-title {
+        font-size: 22px;
+        line-height: 14px;
+    }
+
+    .catalog__left-title {
+        font-size: 20px;
+    }
+
+    .right-error-info__title {
+        font-size: 20px;
+    }
+
+    .ui-accordion-header {
+        background-size: 40px 40px;
+    }
+
+    .catalog__tabs-btn {
+        width: 42px;
+        height: 42px;
+        background-size: 43px 43px;
+    }
+
     .catalog__title {
         margin-bottom: 20px;
     }
@@ -3070,6 +3132,10 @@ body {
         padding-bottom: 50px;
     }
 
+    .events__container {
+        min-height: 780px;
+    }
+
     .events__item {
         width: 100%;
     }
@@ -3079,6 +3145,7 @@ body {
     }
     .events__title-alert {
         max-width: none;
+        font-size: 20px;
     }
 
     .swiper-pagination-bullet {
@@ -3152,7 +3219,12 @@ body {
     .left__str,
     .left__str-alert {
         display: none;
+        font-size: 20px;
+    }
 
+    .left__link {
+        width: 50px;
+        height: 50px;
     }
 
     
@@ -3184,6 +3256,17 @@ body {
         order: 1;
     }
 
+    .footer__logo svg{
+        width: 97px;
+        height: 22px;
+    }
+
+    
+    .footer__link svg{
+        width: 50px;
+        height: 50px;
+    }
+
 }
 
 @media (max-width:320px) {
@@ -3195,6 +3278,12 @@ body {
 
     .search-alert {
         height: 35px;
+    }
+
+    .burger-button {
+        width: 24px;
+        height: 19px;
+        background-image: url('../img/burger-button-320.svg');
     }
 
     .search-close {
@@ -3213,11 +3302,7 @@ body {
         height: 22px;
     }
 
-    .burger-button {
-        width: 24px;
-        height: 19px;
-        background-image: url('../img/burger-button-320.svg');
-    }
+
 
     .burger-menu {
         min-height: 355px;
@@ -3376,6 +3461,10 @@ body {
         margin-bottom: 17px;
     }
 
+    .catalog__left-title {
+        font-size: 24px;
+    }
+
     .catalog__tabs-btn {
         width: 32px;
         height: 32px;
@@ -3479,6 +3568,7 @@ body {
     .events__title-alert {
         margin-bottom: 40px;
         line-height: 24px;
+        font-size: 24px;
     }
 
     .events__swiper {
@@ -3603,7 +3693,7 @@ body {
     .contacts__left {
         width: 100%;
         min-height: 328px;
-        padding-bottom: 24px;
+        padding-bottom: 32px;
     }
 
     .contacts__right {
@@ -3635,10 +3725,7 @@ body {
         margin-right: 20px;
     }
 
-    .footer__logo svg{
-        width: 97px;
-        height: 22px;
-    }
+
 
     .footer {
         padding-top: 24px;
@@ -3649,10 +3736,6 @@ body {
     }
 
 
-    .footer__link svg{
-        width: 50px;
-        height: 50px;
-    }
 
     .footer__links {
         margin-bottom: 15px;
